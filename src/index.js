@@ -1,3 +1,5 @@
-import './js/common.js'
-import './css/main.css'
-import './scss/main.scss'
+import './js/main.js'
+// CSS (example)
+import './assets/css/main.css'
+// SCSS
+import './assets/scss/main.scss'
