@@ -7,14 +7,11 @@ html(lang='en')
     meta(charset='utf-8')
     title #{title}
     meta(name="description", content=description)
+    link(rel="stylesheet", href="main.css")
     block head
 
   body(class=pageClass)
     .wrapper
-      #app
-        include ../includes/modules/header
+        include ../includes/modules/header/header
         .content-wrapper
           block content
-        include ../includes/modules/footer
-
-    block script

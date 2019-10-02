@@ -1,1 +1,18 @@
-// header style
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  
+  .logo {
+    margin-top: 15px;
+    margin-left: rem(140);
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+    margin-left: 297.31px;
+    justify-content: space-between;
+  }
+}
