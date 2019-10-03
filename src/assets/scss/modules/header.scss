@@ -1,18 +1,53 @@
-.header {
-  height: 70px;
-  width: 100%;
+.inner {
+  margin: 15px 140px;
+  padding: 0px;
   display: flex;
   
-  .logo {
-    margin-top: 15px;
-    margin-left: rem(140);
-  }
-
-  .nav-bar {
+  .menu__list {
     display: flex;
     flex-direction: row;
-    margin-top: 26px;
-    margin-left: 297.31px;
-    justify-content: space-between;
+    margin: 11px 30px 10px 297.31px;
+
+    .menu__item {
+      margin-right: 30px;
+    }
+    
+    .menu__link {
+      text-decoration: none;
+      color: black;
+
+      .menu__item_bold{
+        font-weight: bold;
+        line-height: 17px;
+        color: black;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    
+    .btn__register {
+      width: 101px;
+      height: 34px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+    }
+
+    .btn__login {
+      padding: 9px 20px 10px 20px;
+      font-size: 12px;
+      font-weight: bolder;
+      line-height: 14.63px;
+      width: 79px;
+      height: 34px;
+      margin-right: 20px;
+      border: 2px solid transparent;
+      border-radius: 22px;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF, #8BA4F9);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 0px 0px 1000px #fff inset;
+    }
   }
 }

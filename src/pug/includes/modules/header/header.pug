@@ -1,13 +1,22 @@
-header.header
-  img.logo(src="./assets/img/logo.svg", alt="logo")
+.inner
+  .logo
+    img(src="./assets/img/logo.svg", alt="logo")
   nav.menu
-    ul.nav-bar
-      li.nav-bar__home Home
-      li.nav_bar__about About us
-      li.nav_bar__services Services
-      li.nav_bar__careers Careers
-      li.nav_bar__news News
-      li.nav_bar__documentation Documentation
-  .button
-    .button__login Login
-    .button__register Register
+    ul.menu__list 
+      li.menu__item.menu__item__bold
+        a.menu__link(href="#") Home
+      li.menu__item
+        a.menu__link(href="#") Aboutus
+      li.menu__item
+        a.menu__link(href="#") Services
+      li.menu__item
+        a.menu__link(href="#") Careers
+      li.menu__item
+        a.menu__link(href="#") News
+      li.menu__item
+        a.menu__link(href="#") Documentation
+  .btn
+    .btn__login
+      a LOGIN
+    .btn__register 
+      a Register
