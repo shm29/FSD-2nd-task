@@ -35,6 +35,12 @@ module.exports = {
       loader: 'babel-loader',
       exclude: '/node_modules/'
     }, {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
+    }, {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
@@ -50,7 +56,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: `${PATHS.src}/postcss.config.js`} }
+          options: { sourceMap: true, config: { path: './postcss.config.js'} }
         }, {
           loader: 'sass-loader',
           options: { sourceMap: true }
@@ -66,7 +72,7 @@ module.exports = {
           options: { sourceMap: true }
         }, {
           loader: 'postcss-loader',
-          options: { sourceMap: true, config: { path: `${PATHS.src}/postcss.config.js`} }
+          options: { sourceMap: true, config: { path: './postcss.config.js'} }
         }
       ]
     }]

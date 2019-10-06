@@ -1,10 +1,14 @@
 extends ../layout/main
 
-block variables
-  - var title = 'FSD webpack';
-  - var description = 'FSD 2nd task';
-  - var pageClass = 'index-page';
+block head
 
-block content
-  section
-    .container
+block variables
+    - var title = 'FSD 2nd Task';
+    - var description = 'Artur Sholomko intern';
+    - var pageClass = 'landing-page';
+
+block header
+    include ../includes/modules/header/header
+    +header({
+      logged: true
+    })

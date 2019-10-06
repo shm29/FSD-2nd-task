@@ -1,22 +1,26 @@
-.inner
-  .logo
-    img(src="./assets/img/logo.svg", alt="logo")
-  nav.menu
-    ul.menu__list 
-      li.menu__item.menu__item__bold
-        a.menu__link(href="#") Home
-      li.menu__item
-        a.menu__link(href="#") Aboutus
-      li.menu__item
-        a.menu__link(href="#") Services
-      li.menu__item
-        a.menu__link(href="#") Careers
-      li.menu__item
-        a.menu__link(href="#") News
-      li.menu__item
-        a.menu__link(href="#") Documentation
-  .btn
-    .btn__login
-      a LOGIN
-    .btn__register 
-      a Register
+include ../form-elements/buttons/buttons
+
+mixin header(options)
+  header.header
+    .logo
+      img(src="./assets/img/logo.svg", alt="logo")
+    nav.header__nav
+      a.header__nav__link.header__nav__link-bold(href="#") Home
+      a.header__nav__link(href="#") About us
+      a.header__nav__link(href="#") Services
+      i.header__nav__link.material-icons keyboard_arrow_down
+      a.header__nav__link(href="#") Careers
+      a.header__nav__link(href="#") News
+      a.header__nav__link(href="#") Documentation
+    .header__login-register
+      if options.logged
+        span.header__login-register__logged Name Surname
+      else
+        +button({
+          value: "LOGIN",
+          class: "button-transparent button-login"
+        })
+        +button({
+          value: "REGISTER",
+          class: "button button-register"
+        })

@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 70px;
+  margin: 15px 140px;
+  padding: 0px;
+  
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    margin: 11px 30px 10px 297.31px;
+
+    &__link {
+      display: block;
+      margin-right: 30px;
+      color: $dark-50;
+      
+      &:nth-child(3) {
+        margin-right: 0px;
+      }
+      &:nth-child(4){
+        margin-top: -3px;
+      }
+
+      &-bold {
+        font-weight: bold;
+        color: $dark-75;
+      }
+    } 
+  }
+  &__login-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logged {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      width: 101px;
+      height: 34px;
+      margin-bottom: 18px;
+
+      &-transparent {
+        width: 79px;
+        height: 34px;
+        margin-right: 20px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
