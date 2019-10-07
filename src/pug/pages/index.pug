@@ -1,4 +1,6 @@
 extends ../layout/main
+include ../includes/modules/header/header
+include ../includes/modules/colors-type/colors-type
 
 block head
 
@@ -8,7 +10,8 @@ block variables
     - var pageClass = 'landing-page';
 
 block header
-    include ../includes/modules/header/header
-    +header({
-      logged: true
-    })
+  +header({
+    logged: true
+  })
+block colors-type
+  +colors-type({})

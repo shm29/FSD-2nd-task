@@ -1,0 +1,65 @@
+.colors-type {
+
+
+  &__logo {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  &__colors {
+    display: flex;
+    flex-direction: column;
+    height: 610px;
+    width: 270px;
+    margin-left: 150px;
+    margin-top: 145px;
+    margin-bottom: 145px;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+
+      &__box {
+        display: block;
+        height: 70px;
+        width: 70px;
+        border-radius: 6px;
+      }
+      &__text {
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        font-family: $secondFont;
+        color: $dark-100;
+      }
+    }
+  }
+}
+
+span {
+  font-family: $mainFont;
+  font-weight: normal;
+}
+
+.color-100 {
+  background: $dark-100;
+}
+.color-75 {
+  background: $dark-75;
+}
+.color-50 {
+  background: $dark-50;
+}
+.color-25 {
+  background: $dark-25;
+}
+.color-05 {
+  background: $dark-5;
+}
+.color-purple {
+  background: $purple;
+}
+.color-green {
+  background: $green;
+}
