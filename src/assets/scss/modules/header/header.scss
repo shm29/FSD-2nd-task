@@ -3,16 +3,22 @@
   width: 100%;
   max-width: 1440px;
   height: 70px;
-  margin: 15px 140px;
   padding: 0px;
+
+  .logo {
+    margin-top: 15px;
+    margin-left: 140px;
+  }
   
   &__nav {
     display: flex;
     flex-direction: row;
-    margin: 11px 30px 10px 297.31px;
+    margin-left: 297.31px;
 
     &__link {
       display: block;
+      margin-top: 26px;
+      margin-bottom: 26px;
       margin-right: 30px;
       color: $dark-50;
       
@@ -20,8 +26,12 @@
         margin-right: 0px;
       }
       &:nth-child(4){
-        margin-top: -3px;
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-bottom: 24px;
+        margin-right: 20px;
       }
+      
 
       &-bold {
         font-weight: bold;
@@ -41,19 +51,21 @@
       padding-left: 30px;
       height: 30px;
       line-height: 30px;
-      margin-bottom: 30px;
+      margin-top: 26px;
+      margin-bottom: 26px;
   }
 
     .button {
       width: 101px;
       height: 34px;
+      margin-top: 18px;
       margin-bottom: 18px;
 
       &-transparent {
         width: 79px;
         height: 34px;
         margin-right: 20px;
-        margin-left: 30px;
+        margin-bottom: 18px;
       }
     }
   }

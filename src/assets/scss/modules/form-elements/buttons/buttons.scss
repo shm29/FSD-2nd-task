@@ -2,6 +2,7 @@
   display: inline-block;
   width: 44px;
   height: 99px;
+  font-weight: bold;
   border: none;
   border-radius: 22px;
   background: $primary-gradient;
@@ -13,6 +14,7 @@
   }
 
   &-transparent {
+    font-weight: bold;
     color: $purple;
     border: 2px solid transparent;
     border-radius: 22px;
