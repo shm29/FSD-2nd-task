@@ -29,9 +29,20 @@
       &__text {
         display: flex;
         margin-left: 30px;
-        align-items: center;
+        justify-content: center;
         font-family: $secondFont;
         color: $dark-100;
+
+        h2 {
+          display: flex;
+          align-content: flex-start;
+          justify-content: center;
+        }
+        p {
+          display: flex;
+          align-content: flex-start;
+          justify-content: center;
+        }
       }
     }
   }
@@ -40,26 +51,4 @@
 span {
   font-family: $mainFont;
   font-weight: normal;
-}
-
-.color-100 {
-  background: $dark-100;
-}
-.color-75 {
-  background: $dark-75;
-}
-.color-50 {
-  background: $dark-50;
-}
-.color-25 {
-  background: $dark-25;
-}
-.color-05 {
-  background: $dark-5;
-}
-.color-purple {
-  background: $purple;
-}
-.color-green {
-  background: $green;
 }
