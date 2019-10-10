@@ -1,10 +1,20 @@
-mixin colors-type(color)
-  .colors-type__logo
-    img(src="./assets/img/logo-min.svg", alt="logo")
-  ul.colors-type__colors
+mixin colors(color)
+  img.logo(src="./assets/img/logo-min.svg", alt="logo")
+  ul.colors__list
     each item in color
-      li.colors-type__colors-item
-        .colors-type__colors-item__box(style={opacity: item.opacity, background: item.hex})
-        .colors-type__colors-item__text 
-          h2.colors-type__colors-item__text-title= item.name
-          p.colors-type__colors-item__text-desc= item.hex
+      li.colors__list-item
+        .colors__item-box(style={opacity: item.opacity, background: item.hex})
+        .colors__item-text 
+          h2.colors__item-text__title= item.name
+          h2.colors__item-text__desc= item.hex
+
+mixin type(types)
+  ul.list-type
+    each item in types
+      li.list-type__item
+      if item.tag == 'Body'
+        .list.type__item-tag(style={'font-size': item.size, 'line-height': item.height})= item.tag
+        p.list-type__item-text.list-type__body(style={'font-size': item.size, 'line-height': item.height})= item.description
+      else
+        .list-type__item-tag(style={'font-size': item.size, 'line-height': item.height})= item.tag
+        p.list-type__item-text(style={'font-size': item.size, 'line-height': item.height})= item.description

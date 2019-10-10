@@ -1,19 +1,16 @@
 include ../form-elements/buttons/buttons
 
-mixin header(options)
+mixin header(login, ...items)
   header.header
     .logo
       img(src="./assets/img/logo.svg", alt="logo")
     nav.header__nav
-      a.header__nav__link.header__nav__link-bold(href="#") Home
-      a.header__nav__link(href="#") About us
-      a.header__nav__link(href="#") Services
-      i.header__nav__link.material-icons keyboard_arrow_down
-      a.header__nav__link(href="#") Careers
-      a.header__nav__link(href="#") News
-      a.header__nav__link(href="#") Documentation
+      each item in items
+        a.header__nav__link(href=item.href class= currentURL == item.href ? 'active' : '')= item.title
+        if item.title == 'Services'
+          i.header__nav__link.material-icons keyboard_arrow_down
     .header__login-register
-      if options.logged
+      if login.isLogged
         span.header__login-register__logged Name Surname
       else
         +button({
