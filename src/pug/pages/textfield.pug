@@ -1,0 +1,10 @@
+extends ../layout/main
+include ../includes/modules/form-elements/text-field/text-field
+
+
+block header
+  +text-field({
+    'title' : 'Text Field',
+    'class' : 'text-field',
+    'placeholder' : 'Email'
+  })

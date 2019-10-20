@@ -1,0 +1,23 @@
+.text-field {
+  margin: 5px;
+
+  &__input {
+    width: 320px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 1px solid $dark-25;
+    border-radius: 4px;
+    padding: 13px 15px;
+    color: $dark-25;
+    
+    &:hover, &:focus {
+      border: 1px solid $dark-50;
+      color: $dark-75;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+}

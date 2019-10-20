@@ -1,0 +1,21 @@
+mixin colors(color)
+  .colors
+    ul.colors__list
+      each item in color
+        li.colors__list-item
+          .colors__item-box(style={opacity: item.opacity, background: item.hex})
+          .colors__item-text 
+            h2.colors__item-text__title= item.name
+            h2.colors__item-text__desc= item.hex
+
+mixin type(types)
+  .types
+    ul.list-type
+      each item in types
+        li.list-type__item
+        if item.tag == 'Body'
+          .list-type__item-tag(style={'font-size': item.size, 'line-height': item.height})= item.tag
+          p.list-type__item-text.list-type__body(style={'font-size': item.size, 'line-height': item.height})= item.description
+        else
+          .list-type__item-tag(style={'font-size': item.size, 'line-height': item.height})= item.tag
+          p.list-type__item-text(style={'font-size': item.size, 'line-height': item.height})= item.description

@@ -1,0 +1,5 @@
+mixin text-field(opt)
+  form(class=opt.class)
+    if opt.title
+      h3(class=opt.class +'__title')= opt.title
+    input(class=opt.class +'__input',type="text", placeholder=opt.placeholder)
