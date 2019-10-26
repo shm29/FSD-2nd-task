@@ -1,0 +1,30 @@
+extends ../../layout/layout
+include ../../common.blocks/colors-and-types/colors-type
+include ../../common.blocks/logo/logo
+
+block append meta
+  meta(name="keywords", content="Color and types")
+  meta(name="description" content="FSD-2nd Task. Page color&types")
+
+block title
+  | Colors and Type
+
+
+block main
+  +logo('min')
+  section.colors
+    .colors__column
+      +colors([
+        {'name' : 'Dark Shade 100%','hex' : '#1F2041', 'opacity' : '1'}, 
+        {'name' : 'Dark Shade 75%','hex' : '#1F2041', 'opacity' : '0.75'},
+        {'name' : 'Dark Shade 50%','hex' : '#1F2041', 'opacity' : '0.5'},
+        {'name' : 'Dark Shade 25%','hex' : '#1F2041', 'opacity' : '0.25'},
+        {'name' : 'Dark Shade 5%','hex' : '#1F2041', 'opacity' : '0.05'},
+        {'name' : 'Purple','hex' : '#BC9CFF', 'opacity' : '1'},
+        {'name' : 'Green','hex' : '#6FCF97', 'opacity' : '1'}])
+    .colors__column
+      +type([
+        {'title' : 'h1', 'size' : '24px', 'height' : '29px', 'description' : 'This one is the sub-section or widget title'},
+        {'title' : 'h2', 'size' : '19px', 'height' : '23px', 'description' : 'Next one is the item title inside widgets'},
+        {'title' : 'h3', 'size' : '12px', 'height' : '15px', 'description' : 'This is a label or CTA text'},
+        {'title' : 'Body', 'size' : '14px', 'height' : '24px', 'description' : 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'}])

@@ -1,0 +1,16 @@
+@import '../../scss/common.scss';
+@import '../../common.blocks/colors-and-types/colors-type.scss';
+@import '../../common.blocks/logo/logo.scss';
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  &__column{
+    flex-basis: 50%;
+  }
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 15px;
+}

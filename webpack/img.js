@@ -2,11 +2,11 @@ module.exports = function() {
   return {
     module: {
       rules: [{
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]'
-        },
+          name: 'img/[name].[ext]'
+        } 
       }],
     },
   };
